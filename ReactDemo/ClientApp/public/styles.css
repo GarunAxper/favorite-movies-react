@@ -1,0 +1,27 @@
+﻿.read-more-button {
+    color: #007bff
+}
+
+.read-more-button:hover {
+    cursor: pointer
+}
+
+.account-control:hover {
+    cursor: pointer
+}
+
+.fa-star:hover {
+    cursor: pointer;
+    color: #ffd800;
+}
+
+.like-button {
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+}
+
+.spacer {
+    margin-top: 40px
+}
+
