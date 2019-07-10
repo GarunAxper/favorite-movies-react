@@ -93,58 +93,59 @@ class Login extends Component {
 
         return (
             <React.Fragment>
-                <div className='container mt-5'>
-                    <div className="row">
+                <div className='container'>
+                    {/*<div className="row">
                         <div className="col" />
-                        <div className="col-lg-6 col-md-8 col-sm-10 pl-5 pr-5">
-                            <div className="shadow bg-white p-3 mb-4 rounded">
-                                <form className='form-group mt-3'
-                                    onSubmit={this.handleSubmit}
-                                >
-                                    <input
-                                        type='text'
-                                        name='EmailOrUsername'
-                                        className='form-control mt-2'
-                                        value={this.state.userData.EmailOrUsername}
-                                        placeholder='Email or username'
-                                        onChange={this.handleChange}
-                                    />
-                                    <input
-                                        type='password'
-                                        name='Password'
-                                        className='form-control mt-2'
-                                        placeholder='Password'
-                                        onChange={this.handleChange}
-                                    />
-                                    {/*<input type='text' name='confirmPassword' className='form-control mt-2' />*/}
-                                    <div className="form-check mt-3">
-                                        <input
-                                            type="checkbox"
-                                            className="form-check-input"
-                                            name='RememberMe'
-                                            value={this.state.userData.RememberMe}
-                                            onClick={this.handleClick}
-                                            id="rememberMeCheckbox"
-                                        />
-                                        <label className="form-check-label" htmlFor="rememberMeCheckbox">
-                                            Remember me
-                                        </label>
-                                    </div>
-                                    <input
-                                        type="submit"
-                                        value="Submit"
-                                        className="btn btn-block btn-primary mt-3"
-                                        disabled={this.validateUser()}
-                                    />
-                                </form>
-                                <p align="center"><a href="/">Forgot Password?</a></p>
+                        <div className="col-lg-6 col-md-8 col-sm-10 pl-5 pr-5">*/}
+                    <div className="shadow bg-white p-3 mb-4 rounded auth-form">
+                        <form
+                            className='mt-3'
+                            onSubmit={this.handleSubmit}
+                        >
+                            <div className="form-group">
+                                <label htmlFor="Username">
+                                    <b>Username</b>
+                                </label>
+                                <input
+                                    type='text'
+                                    name='EmailOrUsername'
+                                    className='form-control'
+                                    value={this.state.userData.EmailOrUsername}
+                                    onChange={this.handleChange}
+                                />
                             </div>
-                            {redirect}
-                            <p align="center">Don't have an account yet? <a href="/Signup">Sign Up here</a></p>
-                        </div>
-                        <div className="col" />
+                            <div className="form-group">
+                                <label htmlFor="Password">
+                                    <b>Password</b>
+                                </label>
+                                <input
+                                    type='password'
+                                    name='Password'
+                                    className='form-control'
+                                    onChange={this.handleChange}
+                                />
+                            </div>
+                            {/*<input type='text' name='confirmPassword' className='form-control mt-2' />*/}
+                            <div className="custom-control custom-checkbox">
+                                <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
+                                <label className="custom-control-label" htmlFor="customCheck">Remember me</label>
+                            </div>
+                            <input
+                                type="submit"
+                                value="Submit"
+                                className="btn btn-block btn-primary my-3"
+                                disabled={this.validateUser()}
+                            />
+                            
+                        </form>
+                        <p align="center"><a href="/">Forgot Password?</a></p>
                     </div>
+                    {redirect}
+                    <p align="center">Don't have an account yet? <a href="/Signup">Sign Up here</a></p>
                 </div>
+                <div className="col" />
+                {/*</div>
+                </div>*/}
             </React.Fragment>
         );
     }

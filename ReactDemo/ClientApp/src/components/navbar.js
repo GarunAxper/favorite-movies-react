@@ -32,17 +32,25 @@ class Navbar extends Component {
             );
         }
 
-        
+        //
+        //
 
         return (
-            <nav className="navbar navbar-expand-sm sticky-top navbar-light" style={{ backgroundColor: "#5d4f66" }}>
+
+
+
+            <nav className="navbar navbar-expand-lg sticky-top navbar-dark" style={{ backgroundColor: "#5d4f66" }}>
                 <div className="container">
                     <a className="navbar-brand text-white" href="">
                         <i className="fas fa-film fa-lg m-2" />
                         Favorite Movies
                     </a>
 
-                    <div className="justify-content-end">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon" />
+                    </button>
+
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul className="nav navbar-nav">
                             {authArea}
                             <li className="nav-item">

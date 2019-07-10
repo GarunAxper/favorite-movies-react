@@ -24,18 +24,15 @@ class movieSearch extends Component {
 
     render() {
         return (
-            <div className="container mt-3" style={{ maxWidth: '75%' }}>
-                <div class="input-group">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button" />
-                    <div className="input-group-append">
-                        <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                        <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">Action</a>
-                            <a className="dropdown-item" href="#">Another action</a>
-                            <a className="dropdown-item" href="#">Something else here</a>
-                            <div role="separator" className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">Separated link</a>
-                        </div>
+            <div className="container mt-3 w-75">
+                <div className="input-group">
+                    <input type="text" onChange={this.handleChange} className="form-control" aria-label="Text input with dropdown button" />
+                    {//<div className="input-group-append">
+                    //    <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    //    <div className="dropdown-menu">
+                    //        <a className="dropdown-item" href="#">Action</a>
+                    //        <a className="dropdown-item" href="#">Another action</a>
+                    //    </div>}
                     </div>
                     <br />
                 </div>

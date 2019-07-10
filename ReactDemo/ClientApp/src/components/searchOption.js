@@ -7,7 +7,7 @@ class SearchOption extends Component {
         const movie = this.props.movie;
 
         return (
-            <div className="card mb-3">
+            <div className="card shadow bg-white rounded my-3 border-0">
                 <div className="row no-gutters">
                     <div className="col-md-3">
                         <img src={"https://image.tmdb.org/t/p/w154" + movie.poster_path} alt="Poster" />
